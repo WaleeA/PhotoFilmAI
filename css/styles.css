@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 40px; /* Increased padding for more space */
+}
+
+header {
+    background-color: #1F1F1F;
+    color: #ffffff;
+    padding: 20px 40px; /* Increased side padding for better alignment */
+    position: fixed;
+    width: calc(100% - 80px); /* Adjusted for the increased padding */
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    flex: 1; /* Allows the title to push navigation to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+    align-items: center;
+    flex: 1; /* Take up remaining space to push to the right */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #007BFF;
+}
+
+main {
+    margin-top: 100px; /* Increased to accommodate the fixed header */
+    padding: 40px 0; /* Increased vertical padding for more space between sections */
+}
+
+section {
+    margin: 40px 0; /* Increased margin for more space between sections */
+    margin-bottom: 40px;
+    padding: 40px; /* Increased padding for a more spacious section */
+    background-color: #1F1F1F;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+section h2 {
+    color: #ffffff; /* Ensure headers are clearly visible */
+    margin-bottom: 20px; /* Space between header and paragraph */
+}
+
+section p {
+    color: #cccccc; /* Slightly lighter text for readability */
+    margin-bottom: 20px; /* Space before buttons or next paragraph */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+}
+
+.get-started-btn {
+    display: inline-block;
+    background-color: #007BFF; /* Vivid color for visibility */
+    color: #ffffff;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Deeper shadow for depth */
+    font-weight: bold; /* Make text bold for emphasis */
+}
+
+.get-started-btn:hover, .get-started-btn:focus {
+    background-color: #0056b3; /* Darker shade on hover for effect */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 5px 7px rgba(0,0,0,0.2); /* Enhance shadow on hover */
+}
+
+
+footer {
+    padding: 40px; /* Increased padding for consistency */
+    background-color: #1F1F1F;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
+    /* Other footer styles remain unchanged */
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#scrollToTopBtn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
