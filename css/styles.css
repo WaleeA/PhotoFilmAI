@@ -61,6 +61,13 @@ nav ul li a:focus {
     background-color: #007BFF;
 }
 
+nav ul li a.active {
+    color: #4CAF50; /* Example: Sets the active link color to green */
+    background-color: #333; /* Example: Gives a darker background to the active link */
+    /* Other styles to make the active link stand out */
+}
+
+
 main {
     margin-top: 100px; /* Increased to accommodate the fixed header */
     padding: 40px 0; /* Increased vertical padding for more space between sections */
@@ -130,4 +137,64 @@ footer {
 #scrollToTopBtn.visible {
     opacity: 1;
     visibility: visible;
+}
+
+
+/* PRICING CSS STUFF */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    color: #ffffff;
+}
+
+.pricing-table th {
+    background-color: rgba(35, 14, 69, 0.8);
+}
+
+.pricing-table td {
+    background-color: rgba(98, 9, 240, 0.075);
+}
+
+.account-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.get-started-btn {
+    background-color: rgba(35, 14, 69, 0.6);
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: rgba(35, 14, 69, 0.8);
+}
+.account-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Creates space between the buttons */
+    margin-top: 20px;
+}
+
+.get-started-btn {
+    background-color: rgba(35, 14, 69, 0.6);
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #9202e6;
 }
