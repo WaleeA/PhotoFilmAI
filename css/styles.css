@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #1F1F1F;
+    background-color: rgba(35, 14, 69, 0.077); /* Updated to deep blue-gray, fully opaque */
     color: #ffffff;
     padding: 20px 40px; /* Increased side padding for better alignment */
     position: fixed;
@@ -70,20 +70,22 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
+section h2, section p {
+    color: #cccccc; /* Adjusted for readability */
+}
+
 section h2 {
-    color: #ffffff; /* Ensure headers are clearly visible */
     margin-bottom: 20px; /* Space between header and paragraph */
 }
 
 section p {
-    color: #cccccc; /* Slightly lighter text for readability */
     margin-bottom: 20px; /* Space before buttons or next paragraph */
     font-size: 1.1rem; /* Slightly larger font size for readability */
 }
 
 .get-started-btn {
     display: inline-block;
-    background-color: #007BFF; /* Vivid color for visibility */
+    background-color: #230356; /* Vivid color for visibility */
     color: #ffffff;
     padding: 15px 30px; /* Increased padding for a larger button */
     text-decoration: none;
@@ -94,17 +96,15 @@ section p {
 }
 
 .get-started-btn:hover, .get-started-btn:focus {
-    background-color: #0056b3; /* Darker shade on hover for effect */
+    background-color: #9202e6; /* Darker shade on hover for effect */
     transform: translateY(-2px); /* Slight lift on hover */
     box-shadow: 0 5px 7px rgba(0,0,0,0.2); /* Enhance shadow on hover */
 }
-
 
 footer {
     padding: 40px; /* Increased padding for consistency */
     background-color: #1F1F1F;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
-    /* Other footer styles remain unchanged */
 }
 
 #scrollToTopBtn {
@@ -112,7 +112,7 @@ footer {
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #9202e6;
     color: white;
     border: none;
     border-radius: 5px;
@@ -126,4 +126,3 @@ footer {
     opacity: 1;
     visibility: visible;
 }
-
