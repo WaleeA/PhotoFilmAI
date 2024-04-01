@@ -8,25 +8,54 @@
 </head>
 <body>
 
-    <header>
-        <h1>Film Exposed</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="create.html">Create</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+<header>
+    <h1>Film Exposed</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="pricing.html" class="active">Pricing</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+</header>
 
 <main>
-    <!-- Content for Pricing Page -->
+    <section class="pricing-intro">
+        <h2>Pricing Plans</h2>
+        <p>Start enhancing your photos today with our easy-to-use filters.</p>
+    </section>
+    
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Credits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Free</td>
+                <td>$0</td>
+                <td>1 Credit</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>$9.99</td>
+                <td>25 Credits</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="account-actions">
+        <div class="account-btn"><a href="account.html" class="get-started-btn">Create an Account</a></div>
+        <div class="account-btn"><a href="account.html" class="get-started-btn">Log in</a></div>
+    </div>
+    
 </main>
 
 <footer>
-    <!-- Scroll to Top Button -->
     <button id="scrollToTopBtn">↑ Top</button>
 </footer>
 
