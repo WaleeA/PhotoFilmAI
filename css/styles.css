@@ -56,6 +56,13 @@ nav ul li a:focus {
     background-color: #007BFF;
 }
 
+nav ul li a.active {
+    color: #4CAF50; /* Example: Sets the active link color to green */
+    background-color: #333; /* Example: Gives a darker background to the active link */
+    /* Other styles to make the active link stand out */
+}
+
+
 main {
     margin-top: 100px; /* Increased to accommodate the fixed header */
     padding: 40px 0; /* Increased vertical padding for more space between sections */
